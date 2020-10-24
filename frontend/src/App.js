@@ -1,11 +1,26 @@
+// Import: Dependencies
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
-function App() {
+// Import: Screens
+import { HomeScreen, ProductScreen } from "./screens";
+
+// Import: Components
+import { Header, Footer } from "./components";
+
+// Component: App
+export default function App() {
   return (
-    <>
-      <h1>Welcome to the Keyboard Shop</h1>
-    </>
+    <BrowserRouter>
+      <Header />
+      <main className="py-3">
+        <Container>
+          <Route exact path="/" component={HomeScreen} />
+          <Route path="/product/:id" component={ProductScreen} />
+        </Container>
+      </main>
+      <Footer />
+    </BrowserRouter>
   );
 }
-
-export default App;
