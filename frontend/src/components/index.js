@@ -4,6 +4,12 @@ export { default as Header } from "./Header/Header.component";
 // Component: Footer
 export { default as Footer } from "./Footer/Footer.component";
 
+// Component: Loader
+export { default as Loader } from "./Loader/Loader.component";
+
+// Component: Message
+export { default as Message } from "./Message/Message.component";
+
 // Component: Product
 export { default as Product } from "./Product/Product.component";
 
