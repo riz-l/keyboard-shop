@@ -1,27 +1,24 @@
 // Import: Dependencies
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useEffect } from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {listProductDetails} from "../../actions/productActions";
 import { Link } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
 
 // Import: Components
-import { Rating } from "../../components";
+import { Loader, Message, Rating } from "../../components";
 
 // Screen: ProductScreen
 export default function ProductScreen({ match }) {
-  // State = product
-  const [product, setProduct] = useState({});
+  const dispatch = useDispatch();
+
+  const productDetails = useSelector(state => state.productDetails);
+  const {loading, error, product} = productDetails;
 
   // On load, fetches API product data from backend and sets to state
   useEffect(() => {
-    async function fetchProduct() {
-      const { data } = await axios.get(`/api/products/${match.params.id}`);
-
-      setProduct(data);
-    }
-
-    fetchProduct();
-  }, [match]);
+    dispatch(listProductDetails(match.params.id));
+  }, [dispatch]);
 
   return (
     <>
@@ -29,7 +26,8 @@ export default function ProductScreen({ match }) {
         Go Back
       </Link>
 
-      <Row>
+      {loading ? <Loader /> : error ? <Message variant="danger">{error}</Message> : (
+        <Row>
         <Col md={6}>
           <Image src={product.image} alt={product.name} fluid />
         </Col>
@@ -89,6 +87,7 @@ export default function ProductScreen({ match }) {
           </Card>
         </Col>
       </Row>
+      )}
     </>
   );
 }
