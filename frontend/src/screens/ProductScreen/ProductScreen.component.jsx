@@ -1,7 +1,7 @@
 // Import: Dependencies
 import React, { useEffect } from "react";
-import {useDispatch, useSelector} from "react-redux";
-import {listProductDetails} from "../../actions/productActions";
+import { useDispatch, useSelector } from "react-redux";
+import { listProductDetails } from "../../actions/productActions";
 import { Link } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
 
