@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
 // Import: Screens
-import { HomeScreen, ProductScreen } from "./screens";
+import { CartScreen, HomeScreen, ProductScreen } from "./screens";
 
 // Import: Components
 import { Header, Footer } from "./components";
@@ -18,6 +18,7 @@ export default function App() {
         <Container>
           <Route exact path="/" component={HomeScreen} />
           <Route path="/product/:id" component={ProductScreen} />
+          <Route path="/cart/:id?" component={CartScreen} />
         </Container>
       </main>
       <Footer />
