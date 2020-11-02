@@ -11,7 +11,7 @@ import {
   Button,
   Card,
 } from "react-bootstrap";
-import { addToCart } from "../../actions/cartActions";
+import { addToCart, removeFromCart } from "../../actions/cartActions";
 
 // Import: Components
 import { Message } from "../../components";
@@ -34,7 +34,7 @@ export default function CartScreen({ match, location, history }) {
   }, [dispatch, productId, quantity]);
 
   function removeFromCartHandler(id) {
-    console.log("remove");
+    dispatch(removeFromCart(id));
   }
 
   function checkoutHandler() {
