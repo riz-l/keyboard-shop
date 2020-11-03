@@ -4,6 +4,9 @@ export { default as Header } from "./Header/Header.component";
 // Component: Footer
 export { default as Footer } from "./Footer/Footer.component";
 
+// Component: FormContainer
+export { default as FormContainer } from "./FormContainer/FormContainer.component";
+
 // Component: Loader
 export { default as Loader } from "./Loader/Loader.component";
 
