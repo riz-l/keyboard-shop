@@ -29,7 +29,7 @@ export default function ProductScreen({ history, match }) {
   // On load, fetches API product data from backend and sets to state
   useEffect(() => {
     dispatch(listProductDetails(match.params.id));
-  }, [dispatch]);
+  }, [dispatch, match]);
 
   function addToCartHandler() {
     history.push(`/cart/${match.params.id}?quantity=${quantity}`);
