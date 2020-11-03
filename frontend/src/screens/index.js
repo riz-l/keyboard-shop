@@ -9,3 +9,6 @@ export { default as LoginScreen } from "./LoginScreen/LoginScreen.component";
 
 // screen: ProductScreen
 export { default as ProductScreen } from "./ProductScreen/ProductScreen.component";
+
+// screen: RegisterScreen
+export { default as RegisterScreen } from "./RegisterScreen/RegisterScreen.component";
