@@ -15,3 +15,6 @@ export { default as ProfileScreen } from "./ProfileScreen/ProfileScreen.componen
 
 // screen: RegisterScreen
 export { default as RegisterScreen } from "./RegisterScreen/RegisterScreen.component";
+
+// screen: ShippingScreen
+export { default as ShippingScreen } from "./ShippingScreen/ShippingScreen.component";

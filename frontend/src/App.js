@@ -11,6 +11,7 @@ import {
   ProductScreen,
   ProfileScreen,
   RegisterScreen,
+  ShippingScreen,
 } from "./screens";
 
 // Import: Components
@@ -23,6 +24,7 @@ export default function App() {
       <Header />
       <main className="py-3">
         <Container>
+          <Route path="/shipping" component={ShippingScreen} />
           <Route path="/login" component={LoginScreen} />
           <Route path="/register" component={RegisterScreen} />
           <Route path="/profile" component={ProfileScreen} />
