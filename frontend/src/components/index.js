@@ -1,4 +1,7 @@
-// Component: Header
+// Component: CheckoutSteps
+export { default as CheckoutSteps } from "./CheckoutSteps/CheckoutSteps.component";
+
+// Component: Heade
 export { default as Header } from "./Header/Header.component";
 
 // Component: Footer
