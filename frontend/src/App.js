@@ -8,6 +8,8 @@ import {
   CartScreen,
   HomeScreen,
   LoginScreen,
+  PaymentScreen,
+  PlaceOrderScreen,
   ProductScreen,
   ProfileScreen,
   RegisterScreen,
@@ -24,6 +26,8 @@ export default function App() {
       <Header />
       <main className="py-3">
         <Container>
+          <Route path="/placeorder" component={PlaceOrderScreen} />
+          <Route path="/payment" component={PaymentScreen} />
           <Route path="/shipping" component={ShippingScreen} />
           <Route path="/login" component={LoginScreen} />
           <Route path="/register" component={RegisterScreen} />
