@@ -27,3 +27,6 @@ export { default as RegisterScreen } from "./RegisterScreen/RegisterScreen.compo
 
 // screen: ShippingScreen
 export { default as ShippingScreen } from "./ShippingScreen/ShippingScreen.component";
+
+// screen: UserListScreen
+export { default as UserListScreen } from "./UserListScreen/UserListScreen.component";
