@@ -23,7 +23,7 @@ export default function UserEditScreen({ match, history }) {
   const userDetails = useSelector((state) => state.userDetails);
   const { loading, error, user } = userDetails;
 
-  const userUpdate = useSelector((state) => state.userDetails);
+  const userUpdate = useSelector((state) => state.userUpdate);
   const {
     loading: loadingUpdate,
     error: errorUpdate,
