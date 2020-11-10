@@ -15,6 +15,7 @@ import {
   ProfileScreen,
   RegisterScreen,
   ShippingScreen,
+  UserEditScreen,
   UserListScreen,
 } from "./screens";
 
@@ -29,15 +30,16 @@ export default function App() {
       <main className="py-3">
         <Container>
           <Route path="/order/:id" component={OrderScreen} />
-          <Route path="/placeorder" component={PlaceOrderScreen} />
-          <Route path="/payment" component={PaymentScreen} />
           <Route path="/shipping" component={ShippingScreen} />
+          <Route path="/payment" component={PaymentScreen} />
+          <Route path="/placeorder" component={PlaceOrderScreen} />
           <Route path="/login" component={LoginScreen} />
           <Route path="/register" component={RegisterScreen} />
           <Route path="/profile" component={ProfileScreen} />
           <Route path="/product/:id" component={ProductScreen} />
           <Route path="/cart/:id?" component={CartScreen} />
           <Route path="/admin/userlist" component={UserListScreen} />
+          <Route path="/admin/user/:id/edit" component={UserEditScreen} />
           <Route exact path="/" component={HomeScreen} />
         </Container>
       </main>

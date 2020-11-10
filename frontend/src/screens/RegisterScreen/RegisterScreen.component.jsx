@@ -8,7 +8,7 @@ import { register } from "../../actions/userActions";
 // Import: Components
 import { FormContainer, Loader, Message } from "../../components";
 
-// Screen: LoginScreen
+// Screen: RegisterScreen
 export default function RegisterScreen({ location, history }) {
   // State = name, email, password, confirmPassword, message
   const [name, setName] = useState("");
