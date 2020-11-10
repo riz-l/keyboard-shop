@@ -11,6 +11,7 @@ import {
   OrderScreen,
   PaymentScreen,
   PlaceOrderScreen,
+  ProductListScreen,
   ProductScreen,
   ProfileScreen,
   RegisterScreen,
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/cart/:id?" component={CartScreen} />
           <Route path="/admin/userlist" component={UserListScreen} />
           <Route path="/admin/user/:id/edit" component={UserEditScreen} />
+          <Route path="/admin/productlist" component={ProductListScreen} />
           <Route exact path="/" component={HomeScreen} />
         </Container>
       </main>
