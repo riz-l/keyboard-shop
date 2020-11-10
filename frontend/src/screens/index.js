@@ -16,6 +16,9 @@ export { default as PaymentScreen } from "./PaymentScreen/PaymentScreen.componen
 // screen: PlaceOrderScreen
 export { default as PlaceOrderScreen } from "./PlaceOrderScreen/PlaceOrderScreen.component";
 
+// screen: ProductEditScreen
+export { default as ProductEditScreen } from "./ProductEditScreen/ProductEditScreen.component";
+
 // screen: ProductListScreen
 export { default as ProductListScreen } from "./ProductListScreen/ProductListScreen.component";
 
