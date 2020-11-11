@@ -7,6 +7,9 @@ export { default as HomeScreen } from "./HomeScreen/HomeScreen.component";
 // screen: LoginScreen
 export { default as LoginScreen } from "./LoginScreen/LoginScreen.component";
 
+// screen: OrderListScreen
+export { default as OrderListScreen } from "./OrderListScreen/OrderListScreen.component";
+
 // screen: OrderScreen
 export { default as OrderScreen } from "./OrderScreen/OrderScreen.component";
 
