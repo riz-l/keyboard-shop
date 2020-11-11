@@ -16,6 +16,9 @@ export { default as Loader } from "./Loader/Loader.component";
 // Component: Message
 export { default as Message } from "./Message/Message.component";
 
+// Component: Paginate
+export { default as Paginate } from "./Paginate/Paginate.component";
+
 // Component: Product
 export { default as Product } from "./Product/Product.component";
 
