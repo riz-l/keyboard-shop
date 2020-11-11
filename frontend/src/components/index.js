@@ -21,3 +21,6 @@ export { default as Product } from "./Product/Product.component";
 
 // Component: Rating
 export { default as Rating } from "./Rating/Rating.component";
+
+// Component: SearchBox
+export { default as SearchBox } from "./SearchBox/SearchBox.component";

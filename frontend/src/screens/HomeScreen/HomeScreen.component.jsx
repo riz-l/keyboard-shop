@@ -8,7 +8,9 @@ import { listProducts } from "../../actions/productActions";
 import { Loader, Message, Product } from "../../components";
 
 // Screen: HomeScreen
-export default function HomeScreen() {
+export default function HomeScreen({ match }) {
+  const keyword = match.params.keyword;
+
   const dispatch = useDispatch();
 
   const productList = useSelector((state) => state.productList);
@@ -16,8 +18,8 @@ export default function HomeScreen() {
 
   // On load, fetches API products data from backend and sets to state
   useEffect(() => {
-    dispatch(listProducts());
-  }, [dispatch]);
+    dispatch(listProducts(keyword));
+  }, [dispatch, keyword]);
 
   return (
     <>
