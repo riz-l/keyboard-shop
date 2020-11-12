@@ -5,7 +5,13 @@ import { Row, Col } from "react-bootstrap";
 import { listProducts } from "../../actions/productActions";
 
 // Import: Components
-import { Loader, Message, Product, Paginate } from "../../components";
+import {
+  Loader,
+  Message,
+  Product,
+  Paginate,
+  ProductCarousel,
+} from "../../components";
 
 // Screen: HomeScreen
 export default function HomeScreen({ match }) {
@@ -25,6 +31,8 @@ export default function HomeScreen({ match }) {
 
   return (
     <>
+      {!keyword && <ProductCarousel />}
+
       <h1>Latest Products</h1>
       {loading ? (
         <Loader />

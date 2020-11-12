@@ -22,6 +22,9 @@ export { default as Paginate } from "./Paginate/Paginate.component";
 // Component: Product
 export { default as Product } from "./Product/Product.component";
 
+// Component: ProductCarousel
+export { default as ProductCarousel } from "./ProductCarousel/ProductCarousel.component";
+
 // Component: Rating
 export { default as Rating } from "./Rating/Rating.component";
 
